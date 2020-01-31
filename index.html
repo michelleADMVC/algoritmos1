@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algoritmos del java Scrih</title>
+</head>
+<body>
+    <!-- #1 -->
+    <script>
+        function ex1() {
+            var x = [];
+            for (let i = 1; i <= 255; i++)
+                x.push(i);
+            return x;
+        }
+        console.log(ex1());
+    </script>
+    
+    <!-- #2 -->
+    <script>
+        function ex2() {
+            var acum = 0;
+            for (let i = 2; i <= 1000; i += 2)
+                acum = i + acum;
+            return acum;
+        }
+        console.log(ex2());
+    </script>
+    
+    <!-- #3 -->
+    
+    <script>
+        function ex3() {
+            var acum = 0;
+            for (let i = 1; i <= 1000; i += 2)
+                acum = i + acum;
+            return acum;
+        }
+        console.log(ex3());
+    </script>
+    
+    <!-- #4 -->
+    
+    <script>
+        function ex4(a) {
+            var acum = 0;
+            for (let i = 0; i < a.length; i++)
+                acum = acum + a[i];
+            return acum;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex4(x));
+    </script>
+    
+    <!-- #5 -->
+    
+    <script>
+        function ex5(x) {
+            var high = x[0];
+            for (let i = 1; i < x.length; i++)
+                if (x[i] > high)
+                    high = x[i];
+            return high;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex5(x));
+    </script>
+    
+    <!-- #6 -->
+    <script>
+        function ex6(x) {
+            var acum = 0;
+            for (let i = 0; i < x.length; i++) {
+                acum = acum + x[i];
+            }
+            return (acum / (x.length))
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex7(x));
+    </script>
+    
+    <!-- #7 -->
+    <script>
+        function ex8() {
+            var x = [];
+            for (let i = 1; i < 50; i += 2)
+                x.push(i);
+            return x;
+        }
+        console.log(ex8());
+    </script>
+    
+    <!-- #8 -->
+    
+    <script>
+        function ex9(x, y) {
+            var cont = 0;
+            for (let i = 0; i < x.length; i++)
+                if (x[i] > y)
+                    cont++;
+            return cont;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex9(x, 2));
+    </script>
+    
+    <!-- #9 -->
+    <script>
+        function ex10(x) {
+            for (let i = 0; i < x.length; i++)
+                x[i] = x[i] * x[i];
+            return x;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex10(x));
+    </script>
+    
+    <!-- #10 -->
+    
+    <script>
+        function ex11(x) {
+            for (let i = 0; i < x.length; i++)
+                if (x[i] < 0)
+                    x[i] = 0;
+            return x;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex11(x));
+    </script>
+    
+    <!-- #11 -->
+    
+    <script>
+        function ex12(x) {
+            var max = x[0];
+            var min = max;
+            var avg = 0;
+            for (let i = 0; i < x.length; i++) {
+                if (x[i] > max)
+                    max = x[i];
+                if (x[i] < min)
+                    min = x[i];
+                avg = avg + x[i];
+            }
+            return [max, min, (avg / x.length)]
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex12(x));
+    </script>
+    
+    <!-- #12 -->
+    <script>
+        function ex13(x) {
+            var temp = x[0];
+            x[0] = x[x.length - 1];
+            x[x.length - 1] = temp;
+            return x;
+        }
+
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex13(x));
+    </script>
+    
+    <!-- #13 -->
+    
+    <script>
+        function ex14(x) {
+            for (let i = 0; i < x.length; i++)
+                if (x[i] < 0)
+                    x[i] = 'Dojo';
+            return x;
+        }
+        var x = [1, 3, 12, -10, 16];
+        console.log(ex14(x));
+    </script>
+</body>
+</html>
